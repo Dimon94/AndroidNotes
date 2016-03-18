@@ -139,6 +139,4 @@
 - //String str=“B”;Grade g=Grade.valueOf(Grade.class,str);
 - values() 此方法虽然在JDK文档中查找不到，但每个枚举类都具有该方法，它遍历枚举类的所有枚举值非常方便。
 
----
-- 邮箱 ：[elisabethzhen@163.com](elisabethzhen@163.com)
-- Good Luck!
+练习：请编写一个关于星期几的枚举WeekDay，要求： 枚举值：Mon、Tue 、Wed 、Thu 、Fri 、Sat 、Sun  该枚举要有一个方法，调用该方法返回中文格式的星期。

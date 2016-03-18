@@ -57,7 +57,3 @@ Assert.assertEquals("2","1");
   3.用@After注解是在每个被测试的方法后执行。
   4.用@BeforeClass 注解的静态方法是在所有方法被测试之前执行的方法，就像类里面的构造方法一样。用来初始化一些要用到的变量等资源。
   5.用@AterClass注解的静态方法是在所有被测试的方法之后执行。相当于c++中析构函数。用来释放一些资源。
-
-  ---
-- 邮箱 ：[elisabethzhen@163.com](elisabethzhen@163.com)
-- Good Luck!
