@@ -3,7 +3,9 @@
 >作者：[Dimon](https://dimon94.github.io/)
 
 >- 微博：[@Dimon-喰](http://weibo.com/dscott/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1)
-- LOFTER:[@Dimon、](http://dimon.lofter.com/)
+- GitHub：[@Dimon94](https://github.com/Dimon94)
+- LOFTER：[@Dimon、](http://dimon.lofter.com/)
+
 
 ## 01-Activity的生命周期
 > 生命周期和启动模式以及IntentFilter的匹配规则分析。
@@ -15,13 +17,13 @@ Activity的生命周期分为两个部分
 
 ### 典型情况下的生命周期分析
 
--  **onCreate** :表示`Activity`正在被创建。在这里可以做一些初始化的工作。
--  **onRestart** :表示`Activity`正在重新启动。当当前`Activity`从不可见重新变成可见状态。
--  **onStart** :表示`Activity`正在被启动。已经可见，但不在前台，无法交互。
--  **onResume** :表示`Activity`已经可见，并且出现在前台可以交互。
--  **onPause** :表示`Activity`正在停止。在这里可以做一些储存数据，停止动画等工作，**但不能太耗时**，因为必须`onPause`执行完成之后新的`Activity`才能`Resume`。
--  **onStop** :表示`Activity`即将停止。可以进行一些稍微重量级的回收工作，不能太耗时。
--  **onDestroy** :表示`Activity`即将被销毁。可以进行一些回收工作和最终的资源释放。
+-  **onCreate** ：表示`Activity`正在被创建。在这里可以做一些初始化的工作。
+-  **onRestart** ：表示`Activity`正在重新启动。当当前`Activity`从不可见重新变成可见状态。
+-  **onStart** ：表示`Activity`正在被启动。已经可见，但不在前台，无法交互。
+-  **onResume** ：表示`Activity`已经可见，并且出现在前台可以交互。
+-  **onPause** ：表示`Activity`正在停止。在这里可以做一些储存数据，停止动画等工作，**但不能太耗时**，因为必须`onPause`执行完成之后新的`Activity`才能`Resume`。
+-  **onStop** ：表示`Activity`即将停止。可以进行一些稍微重量级的回收工作，不能太耗时。
+-  **onDestroy** ：表示`Activity`即将被销毁。可以进行一些回收工作和最终的资源释放。
 
 
 ![Activity的生命周期](http://img.my.csdn.net/uploads/201007/28/0_12803210018q71.gif)
